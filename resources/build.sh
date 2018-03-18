@@ -10,7 +10,7 @@ cd $(dirname "${BASH_SOURCE[0]}")/../
 OD="$(pwd)"
 
 # temp directory for storing isolated environment.
-TMP="$(mktemp -d -t sdb.XXXX)"
+TMP="$(mktemp -d -t sdb.XXXXXX)"
 function rmtemp {
 	rm -rf "$TMP"
 }
